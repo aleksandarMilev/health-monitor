@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Health Monitor</title>
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- Chart.js (global `Chart` object). Loaded before the app modules. -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.6.1/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+    <!--
+    This file is only the SHELL: header, navigation, footer.
+    Every page lives in js/pages/<page>/<page>.html + <page>.js and is loaded
+    into <main id="app"> by js/router.js. Do not put page content here.
+  -->
+    <header class="site-header">
+      <a class="brand" href="#/">Health Monitor</a>
+      <nav class="site-nav">
+        <a href="#/" data-route="/">Home</a>
+        <a href="#/samples" data-route="/samples">Samples</a>
+        <a href="#/external" data-route="/external">External API</a>
+        <!-- Add a link per new page here -->
+      </nav>
+    </header>
+
+    <main id="app" class="container" aria-live="polite"></main>
+
+    <footer class="site-footer">
+      <span>Health Monitor</span>
+      <a href="/scalar" target="_blank" rel="noopener">API docs</a>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

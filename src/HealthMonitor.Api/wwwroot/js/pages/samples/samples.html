@@ -1,0 +1,78 @@
+<section>
+  <h1>Samples</h1>
+  <p class="muted">
+    Reference page showing the full flow: form &rarr; POST /api/samples &rarr;
+    reload &rarr; table + chart. Copy this folder when you create a new page.
+  </p>
+</section>
+
+<div id="message" class="alert hidden"></div>
+
+<section class="card">
+  <h2>Add a sample</h2>
+  <form id="sample-form" class="form" novalidate>
+    <div class="form-row">
+      <div class="field">
+        <label for="name">Name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          maxlength="100"
+          placeholder="e.g. Metric A"
+        />
+      </div>
+      <div class="field">
+        <label for="value">Value</label>
+        <input id="value" name="value" type="number" step="any" required />
+      </div>
+      <div class="field">
+        <label for="unit">Unit</label>
+        <input
+          id="unit"
+          name="unit"
+          type="text"
+          maxlength="20"
+          placeholder="optional"
+        />
+      </div>
+      <div class="field">
+        <label for="recordedAt">Recorded at</label>
+        <input id="recordedAt" name="recordedAt" type="datetime-local" />
+      </div>
+    </div>
+    <div>
+      <button type="submit" class="btn">Add sample</button>
+    </div>
+  </form>
+</section>
+
+<section class="card">
+  <h2>Values over time</h2>
+  <div class="chart-box">
+    <canvas id="samples-chart"></canvas>
+  </div>
+</section>
+
+<section class="card">
+  <h2>All samples</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Value</th>
+          <th>Unit</th>
+          <th>Recorded at</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="samples-body">
+        <tr>
+          <td colspan="5" class="muted">Loading...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

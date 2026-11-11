@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>HealthMonitor.Api</RootNamespace>
+	<NoWarn>$(NoWarn);CA1848;CA1873</NoWarn>
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.15" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="10.0.15" />
+		<PackageReference Include="Scalar.AspNetCore" Version="2.20.0" />
+		<PackageReference Include="CsvHelper" Version="33.1.0" />
+	</ItemGroup>
+  <ItemGroup>
+    <!-- Seed files must be copied next to the .dll so the loaders can find them at runtime. -->
+    <None Update="Data/Files/**/*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Metric A",
+    "value": 52,
+    "unit": "units",
+    "recordedAt": "2026-11-01T08:00:00Z"
+  },
+  {
+    "name": "Metric B",
+    "value": 7.1,
+    "unit": "units",
+    "recordedAt": "2026-11-01T08:00:00Z"
+  },
+  {
+    "name": "Metric A",
+    "value": 55,
+    "unit": "units",
+    "recordedAt": "2026-11-02T08:00:00Z"
+  },
+  {
+    "name": "Metric B",
+    "value": 6.8,
+    "unit": "units",
+    "recordedAt": "2026-11-02T08:00:00Z"
+  },
+  {
+    "name": "Metric A",
+    "value": 58,
+    "unit": "units",
+    "recordedAt": "2026-11-03T08:00:00Z"
+  },
+  {
+    "name": "Metric B",
+    "value": 7.4,
+    "unit": "units",
+    "recordedAt": "2026-11-03T08:00:00Z"
+  },
+  {
+    "name": "Metric A",
+    "value": 54,
+    "unit": "units",
+    "recordedAt": "2026-11-04T08:00:00Z"
+  },
+  {
+    "name": "Metric B",
+    "value": 6.2,
+    "unit": "units",
+    "recordedAt": "2026-11-04T08:00:00Z"
+  },
+  {
+    "name": "Metric A",
+    "value": 61,
+    "unit": "units",
+    "recordedAt": "2026-11-05T08:00:00Z"
+  },
+  {
+    "name": "Metric B",
+    "value": 7.0,
+    "unit": "units",
+    "recordedAt": "2026-11-05T08:00:00Z"
+  },
+  {
+    "name": "Metric A",
+    "value": 57,
+    "unit": "units",
+    "recordedAt": "2026-11-06T08:00:00Z"
+  },
+  {
+    "name": "Metric B",
+    "value": 6.5,
+    "unit": "units",
+    "recordedAt": "2026-11-06T08:00:00Z"
+  },
+  {
+    "name": "Metric A",
+    "value": 60,
+    "unit": "units",
+    "recordedAt": "2026-11-07T08:00:00Z"
+  },
+  {
+    "name": "Metric B",
+    "value": 7.3,
+    "unit": "units",
+    "recordedAt": "2026-11-07T08:00:00Z"
+  }
+]

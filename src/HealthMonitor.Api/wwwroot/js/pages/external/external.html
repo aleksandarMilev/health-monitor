@@ -1,0 +1,34 @@
+<section>
+  <h1>External API</h1>
+  <p class="muted">
+    Tests the external API configured in <code>appsettings.json</code> &rarr;
+    <code>ExternalApi</code>. The request goes browser &rarr; our backend (<code
+      >GET /api/external?path=...</code
+    >) &rarr; external API, so API keys never reach the browser.
+  </p>
+</section>
+
+<section class="card">
+  <form id="external-form" class="form">
+    <div class="field">
+      <label for="path">Relative path on the external API</label>
+      <input
+        id="path"
+        name="path"
+        type="text"
+        required
+        placeholder="e.g. planetary/apod"
+      />
+    </div>
+    <div>
+      <button type="submit" class="btn">Send GET request</button>
+    </div>
+  </form>
+</section>
+
+<div id="message" class="alert hidden"></div>
+
+<section class="card">
+  <h2>Response</h2>
+  <pre id="output" class="code muted">No request sent yet.</pre>
+</section>

@@ -1,0 +1,30 @@
+# Build output
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+publish/
+*.dll
+*.pdb
+
+# IDEs / editors
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets - never commit these
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+
+# Misc
+*.log
+node_modules/
